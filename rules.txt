@@ -1,0 +1,29 @@
+- Clicked cell is revealed
+- When all unrevealed cells are mines,
+  the game is won
+- When clicked cell is a mine, the game
+  is lost
+- A board is built like this:
+    - Each cell's neighbour mines count
+      starts with 0
+    - Mines are planted
+    - When a mine is planted, all of it's
+      neighbours' mine counters increase
+    - Then safe cells are built
+    - When a safe cell is built and it's
+      neighbour mines count is still 0,
+      all of the neighbours are revealed
+- A board is generated like this:
+    - You can specify the amount of
+      mines (N)
+    - First N cells are mines, others
+      are safe
+    - The board is shuffled
+    - If first click lands on a mine, it
+      becomes a safe cell
+- Cell can tell:
+    - If it is a mine
+    - If it is revealed or not
+    - It's neighbour mines count
+    - It's row
+    - It's column
